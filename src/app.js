@@ -46,3 +46,7 @@ app.listen(port, () => {
 // ${port} won't be interpolated (it will be printed as-is).
 // You should use backticks (`) instead of quotes for template strings.
 
+
+
+
+module.exports = app; //this is a vercel configurtaion line
