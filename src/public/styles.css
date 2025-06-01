@@ -1,0 +1,13 @@
+:root {
+    /* this are the bootstrap predefined styles 
+    that we change using the css variables we can override 
+    it and chnage it   https://getbootstrap.com/docs/5.3/customize/css-variables/
+     */
+    --bs-font-sans-serif: "Roboto", sans-serif;
+    --bs-blue: #2067f5;
+    --bs-primary: #2067f5;
+}
+
+h1,h2,h3,h4,h5.h6 {
+    font-family: 'Inter',sans-serif;
+}
