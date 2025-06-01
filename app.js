@@ -36,9 +36,16 @@ const port = process.env.PORT || 3000;
 
 
 
-app.listen(port, () => {
-    console.log('Server running on https ://localhost:${port}');
-});
+if (process.env.NODE_ENV !== 'production') {
+    app.listen(port, () => {
+        // Use backticks for template literals
+        console.log(`Server running on http://localhost:${port}`);
+    });
+}
+
+// app.listen(port, () => {
+//     console.log('Server running on https ://localhost:${port}');
+// });
 // This starts the server.
 // The callback inside listen() runs when the server starts successfully.
 // It logs a message to the console confirming the server is running.
