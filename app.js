@@ -8,6 +8,7 @@ const app = express();
 // This app object is used to define routes, middleware, and server logic.
 // creating a basic route 
 
+const serverlessExpress = require('vercel-serverless-express');
 
 // -----------------------------------------
 // This line serves static files like HTML, CSS, JS, images, etc.
@@ -56,4 +57,5 @@ if (process.env.NODE_ENV !== 'production') {
 
 
 
-module.exports = app; //this is a vercel configurtaion line
+
+module.exports = serverlessExpress({ app });
